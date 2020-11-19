@@ -22,7 +22,7 @@ function draw() {
     wall.shapeColor= color(80,80,80);
      
        if(hasCollided(bullet,wall)){
-         bulletRightEdge.velocityX = 0;
+         bullet.velocityX = 0;
          var damage = weight * speed/(thickness);
          
          if(damage<10){
